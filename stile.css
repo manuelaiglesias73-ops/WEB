@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.encabezado{
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.433);
+    background-image:url("C:\Users\Manu\Desktop\WEB\TP 1 WEB\imagenes\LOGO.png");
+    background-position:100%;
+    background-image:fixed ;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.title{
+    display: flex;
+    align-items: center;
+    font-family:"Dancing Scipt", cursive;
+}
+.logo{
+    display: flex;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ padding-inline: 60px;
+ align-items: center;
+ font-family:"Dancing Scipt", cursive;
+
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    background-color: rgba(255, 0, 0, 0.433);
+    align-items: right;
+    text-align: justify;
+    flex-direction: row;
+    font-family:"Dancing Scipt", cursive;
+    
+}
+header{
+    
+    a{
+        
+        text-decoration: none;
+        color: black;
+    }
+}
+main{
+    margin: 15px;
+}
+
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+
+}
+
+h1{
+    display: flex;
+    color: red;
+    font-family:"Dancing Scipt", cursive;
+    align-items: center;
+}
+h2{
+    color: red;
+    font-family:"Dancing Scipt", cursive;
+}
+p{
+    background-color: rgba(255, 0, 0, 0.433) ;
+    font-family:"Dancing Scipt", cursive;
+}
+hr{
+    height: 7px;
+    background-color: rgb(127, 22, 22);
+}
+.padrefleximg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+
+}
+.padrefleximg div{
+    display: flex;
+    margin: 10px;
+    
+}
+
+footer{
+    display: flex;
+    background-color:  rgba(255, 0, 0, 0.433);
+    text-decoration-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family:"Dancing Scipt", cursive;
+
+}
+@media (max-width: 768px){
+   
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        font-family:"Dancing Scipt", cursive;
+    }
+
+    .nav-links{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        background-color: rgba(255, 0, 0, 0.433);
+        align-items: center;
+        text-align: justify;
+        flex-direction: column;
+        font-family:"Dancing Scipt", cursive;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        font-family:"Dancing Scipt", cursive;
+    }
+ }
