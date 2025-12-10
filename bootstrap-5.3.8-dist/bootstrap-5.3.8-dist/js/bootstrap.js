@@ -95,7 +95,7 @@
   const parseSelector = selector => {
     if (selector && window.CSS && window.CSS.escape) {
       // document.querySelector needs escaping to handle IDs (html5+) containing for instance /
-      selector = selector.replace(/#([^\s"#']+)/g, (match, id) => `#${CSS.escape(id)}`);
+      selector = selector.replace(/#([^/s"#']+)/g, (match, id) => `#${CSS.escape(id)}`);
     }
     return selector;
   };
@@ -105,7 +105,7 @@
     if (object === null || object === undefined) {
       return `${object}`;
     }
-    return Object.prototype.toString.call(object).match(/\s([a-z]+)/i)[1].toLowerCase();
+    return Object.prototype.toString.call(object).match(//s([a-z]+)/i)[1].toLowerCase();
   };
 
   /**
@@ -334,9 +334,9 @@
    * Constants
    */
 
-  const namespaceRegex = /[^.]*(?=\..*)\.|.*/;
-  const stripNameRegex = /\..*/;
-  const stripUidRegex = /::\d+$/;
+  const namespaceRegex = /[^.]*(?=/..*)/.|.*/;
+  const stripNameRegex = //..*/;
+  const stripUidRegex = /::/d+$/;
   const eventRegistry = {}; // Events storage
   let uidEvent = 1;
   const customEvents = {
@@ -1883,7 +1883,7 @@
     }
     _createPopper() {
       if (typeof Popper__namespace === 'undefined') {
-        throw new TypeError('Bootstrap\'s dropdowns require Popper (https://popper.js.org/docs/v2/)');
+        throw new TypeError('Bootstrap/'s dropdowns require Popper (https://popper.js.org/docs/v2/)');
       }
       let referenceElement = this._element;
       if (this._config.reference === 'parent') {
@@ -2937,7 +2937,7 @@
    */
 
   // js-docs-start allow-list
-  const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
+  const ARIA_ATTRIBUTE_PATTERN = /^aria-[/w-]*$/i;
   const DefaultAllowlist = {
     // Global attributes allowed on any supplied element below.
     '*': ['class', 'dir', 'id', 'lang', 'role', ARIA_ATTRIBUTE_PATTERN],
@@ -3247,7 +3247,7 @@
   class Tooltip extends BaseComponent {
     constructor(element, config) {
       if (typeof Popper__namespace === 'undefined') {
-        throw new TypeError('Bootstrap\'s tooltips require Popper (https://popper.js.org/docs/v2/)');
+        throw new TypeError('Bootstrap/'s tooltips require Popper (https://popper.js.org/docs/v2/)');
       }
       super(element, config);
 
