@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    text-decoration-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Dancing Scipt", cursive;
+    background: linear-gradient(to top, red, yellow);
+  }
+  footer .telefono {
+    display: flex;
+    align-items: center;
+    font-family: "Dancing Scipt", cursive;
+  }
+}

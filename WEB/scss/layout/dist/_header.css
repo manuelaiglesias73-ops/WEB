@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+header a {
+  text-decoration: none;
+  color: black;
+  background-color: linear-gradient(to top, yellow, red);
+}
+
+h1 {
+  display: flex;
+  color: red;
+  font-family: "Dancing Scipt", cursive;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .encabezado {
+    display: flex;
+    background-position: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, yellow, red);
+  }
+}
