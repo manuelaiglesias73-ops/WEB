@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+.navbar {
+  display: flex;
+  align-items: center;
+  font-family: "Dancing Scipt", cursive;
+  font-size: 30px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  font-family: "Dancing Scipt", cursive;
+  font-size: 30px;
+}
+
+_main {
+  margin: 15px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(239, 241, 101);
+}
+
+ol {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  color: red;
+  font-family: "Dancing Scipt", cursive;
+  align-items: center;
+}
+
+h2 {
+  color: #ff0000;
+  font-family: "Dancing Scipt", cursive;
+}
+
+hr {
+  height: 7px;
+  background-color: rgb(127, 22, 22);
+}
+
+@media (width >= 768px) {
+  .encabezado {
+    display: flex;
+    background-position: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, yellow, red);
+  }
+  .encabezado .title {
+    display: flex;
+    align-items: center;
+    font-family: "Dancing Scipt", cursive;
+  }
+  .encabezado .logo {
+    display: flex;
+  }
+  .encabezado * {
+    margin: 0;
+    padding: 0;
+  }
+  .encabezado .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 60px;
+    align-items: center;
+    font-family: "Dancing Scipt", cursive;
+    font-size: 30px;
+  }
+  .encabezado .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    text-align: justify;
+    flex-direction: row;
+    font-family: "Dancing Script", cursive;
+    justify-content: space-between;
+    font-size: 30px;
+  }
+  .encabezado .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  .encabezado .nav-links li a:hover {
+    background-color: #333;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .encabezado header a {
+    text-decoration: none;
+    color: black;
+    background-color: linear-gradient(to top, yellow, red);
+  }
+}
+@media (width >= 768px) {
+  footer {
+    display: flex;
+    text-decoration-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Dancing Scipt", cursive;
+    background: linear-gradient(to top, red, yellow);
+  }
+  .telefono {
+    display: flex;
+    align-items: center;
+    font-family: "Dancing Scipt", cursive;
+  }
+}
+.padrefleximg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.padrefleximg div {
+  width: 100%;
+  max-width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

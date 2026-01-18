@@ -1,0 +1,18 @@
+$colorhrs:rgb(127, 22, 22);
+$fuentedancur: "Dancing Scipt", cursive;
+$colorh1: red;
+$coloh2:#ff0000;
+$celular:768px;
+
+@mixin nav-links{
+    display: flex;
+    align-items: center;
+    font-family:"Dancing Scipt", cursive;
+    font-size: 30px;
+}
+.navbar{
+    @include nav-links;
+}
+.nav-links{
+@include nav-links;
+}
