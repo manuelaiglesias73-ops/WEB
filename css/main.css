@@ -1,25 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
-.navbar {
-  display: flex;
-  align-items: center;
-  font-family: "Dancing Scipt", cursive;
-  font-size: 30px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  font-family: "Dancing Scipt", cursive;
-  font-size: 30px;
-}
-
-_main {
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+main {
   margin: 15px;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(239, 241, 101);
+  background-color: rgb(229, 229, 224);
 }
 
 ol {
@@ -45,82 +34,190 @@ hr {
   background-color: rgb(127, 22, 22);
 }
 
-@media (width >= 768px) {
-  .encabezado {
-    display: flex;
-    background-position: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to top, yellow, red);
+.encabezado {
+  display: flex;
+  background-position: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to top, grey, black);
+}
+.encabezado .title {
+  display: flex;
+  align-items: center;
+  font-family: "Dancing Scipt", cursive;
+}
+.encabezado .logo {
+  display: flex;
+}
+.encabezado * {
+  margin: 0;
+  padding: 0;
+}
+.encabezado .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 60px;
+  align-items: center;
+  font-family: "Dancing Scipt", cursive;
+  font-size: 30px;
+}
+.encabezado .navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  text-align: justify;
+  flex-direction: row;
+  font-family: "Dancing Script", cursive;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.encabezado .nav-links li a {
+  text-decoration: none;
+  color: red;
+  padding: 10px 20px;
+  border: 2px solid red;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.encabezado .nav-links li a:hover {
+  background-color: #1b1a1a;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.encabezado header a {
+  text-decoration: none;
+  color: black;
+  background-color: linear-gradient(to top, grey, black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.encabezado.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to top, grey, black);
+  padding: 10px 20px;
+}
+@media (max-width: 768px) {
+  .encabezado.encabezado {
+    flex-direction: column;
+    gap: 15px;
   }
-  .encabezado .title {
-    display: flex;
-    align-items: center;
-    font-family: "Dancing Scipt", cursive;
+}
+
+.navbar.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 60px;
+  font-family: "Dancing Script", cursive;
+}
+.navbar.navbar .nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+}
+.navbar.navbar .nav-links li a {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  padding: 10px 20px;
+  border: 2px solid red;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: auto;
+}
+.navbar.navbar .nav-links li a:hover {
+  background-color: #1b1a1a;
+  color: white;
+  transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+  .navbar.navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    gap: 15px;
   }
-  .encabezado .logo {
-    display: flex;
+  .navbar.navbar .nav-links li {
+    width: 100%;
   }
-  .encabezado * {
-    margin: 0;
-    padding: 0;
+  .navbar.navbar .nav-links li a {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
-  .encabezado .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 60px;
-    align-items: center;
-    font-family: "Dancing Scipt", cursive;
-    font-size: 30px;
+}
+@media (max-width: 768px) {
+  .navbar.navbar {
+    flex-direction: column;
+    padding-inline: 20px;
   }
-  .encabezado .nav-links {
-    display: flex;
+}
+
+html body footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to top, grey, black);
+  color: red;
+  font-size: 20px;
+}
+html body footer a {
+  color: red;
+  text-decoration: none;
+}
+html body footer .telefono {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  html body footer {
+    flex-direction: column;
     gap: 20px;
-    list-style: none;
-    align-items: center;
-    text-align: justify;
-    flex-direction: row;
-    font-family: "Dancing Script", cursive;
-    justify-content: space-between;
-    font-size: 30px;
+    padding: 40px 10px;
+    text-align: center;
   }
-  .encabezado .nav-links li a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
-    border: 2px solid #333;
-    border-radius: 8px;
-    display: inline-block;
-    transition: all 0.3s ease;
-  }
-  .encabezado .nav-links li a:hover {
-    background-color: #333;
-    color: white;
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  .encabezado header a {
-    text-decoration: none;
-    color: black;
-    background-color: linear-gradient(to top, yellow, red);
+  html body footer .telefono {
+    justify-content: center;
   }
 }
-@media (width >= 768px) {
-  footer {
-    display: flex;
-    text-decoration-color: black;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: "Dancing Scipt", cursive;
-    background: linear-gradient(to top, red, yellow);
-  }
-  .telefono {
-    display: flex;
-    align-items: center;
-    font-family: "Dancing Scipt", cursive;
+@media (max-width: 480px) {
+  html body footer {
+    gap: 15px;
+    font-size: 18px;
   }
 }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Dancing Script";
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+  background: linear-gradient(to top, grey, black);
+}
+footer .telefono {
+  display: flex;
+  align-items: center;
+}
+
 .padrefleximg {
   display: flex;
   flex-direction: row;

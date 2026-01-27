@@ -1,0 +1,80 @@
+@import "../utilities/variables";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.encabezado.encabezado { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to top, grey, black);
+  padding: 10px 20px;
+
+  @include responde-a(tablet) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+.navbar.navbar { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 60px;
+  font-family: "Dancing Script", cursive;
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+
+    
+    li a {
+      display: inline-block;
+      text-decoration: none;
+      color: red;
+      padding: 10px 20px;
+      border: 2px solid red;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      width: auto;
+
+      &:hover {
+        background-color: #1b1a1a;
+        color: white;
+        transform: translateY(-5px);
+      }
+    }
+
+    
+    @include responde-a(tablet) {
+      flex-direction: column; 
+      width: 100%;
+      padding: 20px 0;
+      gap: 15px;
+
+      li {
+        width: 100%;
+        a {
+          display: block; 
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  
+  @include responde-a(tablet) {
+    flex-direction: column;
+    padding-inline: 20px;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../utilities/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+html body footer { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    font-family: "Dancing Script", cursive;
+    background: linear-gradient(to top, grey, black);
+    color: red;
+    font-size: 20px;
+
+   
+    a {
+        color: red;
+        text-decoration: none;
+    }
+
+    .telefono {
+        display: flex;
+        align-items: center;
+    }
+
+   
+    @include responde-a(tablet) {
+        
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 10px;
+        text-align: center;
+
+        .telefono {
+            justify-content: center;
+        }
+    }
+
+    @include responde-a(mobile) {
+        gap: 15px;
+        font-size: 18px;
+    }
+}

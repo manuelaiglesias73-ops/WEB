@@ -1,16 +1,19 @@
-@media (width >= $celular){
-   footer{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+   
+footer{
     display: flex;
-    text-decoration-color: black;
     flex-direction: row;
     justify-content: space-between;
-    font-family:"Dancing Scipt", cursive;
-    background: linear-gradient(to top, red, yellow);
+    font-family:"Dancing Script";
+    text-decoration:none;
+    color: red;
+    font-size: 20px;;
+    background: linear-gradient(to top, grey, black);
 
-   }
+   
    .telefono {
     display: flex;
     align-items: center;
-    font-family: "Dancing Scipt", cursive;
+   }
   }
-}
+   

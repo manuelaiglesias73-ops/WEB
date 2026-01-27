@@ -1,18 +1,17 @@
 $colorhrs:rgb(127, 22, 22);
-$fuentedancur: "Dancing Scipt", cursive;
+$fuentedancur: "Dancing Script", cursive;
 $colorh1: red;
 $coloh2:#ff0000;
-$celular:768px;
+$tablet: 768px;
+$mobile: 480px;
 
-@mixin nav-links{
-    display: flex;
-    align-items: center;
-    font-family:"Dancing Scipt", cursive;
-    font-size: 30px;
-}
-.navbar{
-    @include nav-links;
-}
-.nav-links{
-@include nav-links;
+
+
+@mixin responde-a($dispositivo) {
+  @if $dispositivo == tablet {
+    @media (max-width: $tablet) { @content; }
+  }
+  @if $dispositivo == mobile {
+    @media (max-width: $mobile) { @content; }
+  }
 }
