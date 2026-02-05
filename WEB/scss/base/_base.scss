@@ -1,0 +1,33 @@
+.title{
+    display: flex;
+    align-items: center;
+    font-family:"Dancing Scipt", cursive;
+}
+
+main{
+    margin: 15px;
+}
+
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(239, 241, 101);
+}
+
+ol{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+
+}
+
+
+h2{
+    color: #ff0000;
+    font-family:"Dancing Scipt", cursive;
+}
+
+hr{
+    height: 7px;
+    background-color: rgb(127, 22, 22);
+}

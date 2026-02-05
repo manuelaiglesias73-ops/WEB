@@ -1,0 +1,24 @@
+
+.padrefleximg{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.padrefleximg div{
+
+   width: 100%;
+   max-width: 300px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height:200px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+    
+}

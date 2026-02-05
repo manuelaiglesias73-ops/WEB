@@ -1,0 +1,22 @@
+$fondocomuncolor:rgba(255, 0, 0, 0.433);
+$coloritulos:#ff0000;
+$mediamobile768:768px;
+
+
+.encabezado{
+background-color: $fondocomuncolor;
+}
+h1{
+    color:$coloritulos;
+}
+h2{
+    color:$fondocomuncolor;
+}
+
+ @mixin flexcentertext{
+    display: flex;
+    font-family:"Dancing Scipt", cursive;
+    font-size: 80px;
+    justify-content: space-between;
+
+}
