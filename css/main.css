@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
 main {
   margin: 15px;
 }
@@ -42,18 +43,27 @@ hr {
   align-items: center;
   background: linear-gradient(to top, grey, black);
 }
+
 .encabezado .title {
   display: flex;
   align-items: center;
   font-family: "Dancing Scipt", cursive;
 }
+
 .encabezado .logo {
   display: flex;
 }
+
 .encabezado * {
   margin: 0;
   padding: 0;
 }
+
+.encabezado a {
+  position: relative;
+  z-index: 10;
+}
+
 .encabezado .navbar {
   display: flex;
   justify-content: space-between;
@@ -62,6 +72,7 @@ hr {
   font-family: "Dancing Scipt", cursive;
   font-size: 30px;
 }
+
 .encabezado .navbar .nav-links {
   display: flex;
   gap: 20px;
@@ -73,6 +84,7 @@ hr {
   justify-content: space-between;
   font-size: 30px;
 }
+
 .encabezado .nav-links li a {
   text-decoration: none;
   color: red;
@@ -82,12 +94,14 @@ hr {
   display: inline-block;
   transition: all 0.3s ease;
 }
+
 .encabezado .nav-links li a:hover {
   background-color: #1b1a1a;
   color: white;
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .encabezado header a {
   text-decoration: none;
   color: black;
@@ -108,6 +122,54 @@ hr {
   background: linear-gradient(to top, grey, black);
   padding: 10px 20px;
 }
+.padrefleximg {
+    display: flex;
+    flex-wrap: wrap;      
+    justify-content: center;
+    gap: 30px;            
+    padding: 20px;
+}
+
+.integrante-card {
+    width: 180px;       
+    text-align: center;
+}
+
+.integrante-card img {
+    width: 180px;          
+    height: 180px;         
+    object-fit: cover;    
+    border-radius: 50%;  
+    border: 3px solid #f0f0f0; 
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2); 
+}
+
+.integrante-card p {
+    margin-top: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #333;
+    CSS
+
+
+body {
+    background-color: #121212;
+    color: white;
+}
+
+
+.list-group-item-action:hover {
+    background-color: #1f1f1f !important;
+    border-left: 5px solid #ff0000; 
+    transition: all 0.2s ease-in-out;
+}
+
+.badge {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+}
+
 @media (max-width: 768px) {
   .encabezado.encabezado {
     flex-direction: column;
@@ -115,6 +177,66 @@ hr {
   }
 }
 
+.main-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.main-timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #dc3545; 
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #fff;
+    border: 4px solid #dc3545;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left { left: 0; }
+.right { left: 50%; }
+
+.right::after { left: -10px; }
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: #212529; 
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-timeline::after { left: 31px; }
+    .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+    .timeline-item::after { left: 21px; }
+    .right { left: 0%; }
+}
 .navbar.navbar {
   display: flex;
   justify-content: space-between;
@@ -122,12 +244,14 @@ hr {
   padding-inline: 60px;
   font-family: "Dancing Script", cursive;
 }
+
 .navbar.navbar .nav-links {
   display: flex;
   flex-direction: row;
   gap: 20px;
   list-style: none;
 }
+
 .navbar.navbar .nav-links li a {
   display: inline-block;
   text-decoration: none;
@@ -138,11 +262,13 @@ hr {
   transition: all 0.3s ease;
   width: auto;
 }
+
 .navbar.navbar .nav-links li a:hover {
   background-color: #1b1a1a;
   color: white;
   transform: translateY(-5px);
 }
+
 @media (max-width: 768px) {
   .navbar.navbar .nav-links {
     flex-direction: column;
@@ -150,15 +276,18 @@ hr {
     padding: 20px 0;
     gap: 15px;
   }
+
   .navbar.navbar .nav-links li {
     width: 100%;
   }
+
   .navbar.navbar .nav-links li a {
     display: block;
     width: 100%;
     text-align: center;
   }
 }
+
 @media (max-width: 768px) {
   .navbar.navbar {
     flex-direction: column;
@@ -177,14 +306,17 @@ html body footer {
   color: red;
   font-size: 20px;
 }
+
 html body footer a {
   color: red;
   text-decoration: none;
 }
+
 html body footer .telefono {
   display: flex;
   align-items: center;
 }
+
 @media (max-width: 768px) {
   html body footer {
     flex-direction: column;
@@ -192,10 +324,12 @@ html body footer .telefono {
     padding: 40px 10px;
     text-align: center;
   }
+
   html body footer .telefono {
     justify-content: center;
   }
 }
+
 @media (max-width: 480px) {
   html body footer {
     gap: 15px;
@@ -213,6 +347,7 @@ footer {
   font-size: 20px;
   background: linear-gradient(to top, grey, black);
 }
+
 footer .telefono {
   display: flex;
   align-items: center;
